@@ -82,7 +82,7 @@ for (let j = 1; j <= 3; j++) {
 }
 
 // ===================== 14. switch =====================
-let fruit = "apple";
+let fruit = "banana";
 
 switch (fruit) {
   case "apple":
