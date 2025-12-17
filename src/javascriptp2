@@ -1,0 +1,112 @@
+// ===================== 1. Hello, world! =====================
+console.log("Hello, world!");
+
+// ===================== 2. Code structure =====================
+console.log("Code structure example");
+
+// ===================== 3. "use strict" =====================
+"use strict";
+let strictExample = 10;
+console.log(strictExample);
+
+// ===================== 4. Variables =====================
+let name = "Alice";
+const age = 20;
+var city = "Delhi";
+console.log(name, age, city);
+
+// ===================== 5. Data types =====================
+let num = 10;
+let str = "text";
+let bool = true;
+let nothing = null;
+let undef;
+let obj = { x: 1 };
+let arr = [1, 2, 3];
+console.log(typeof num, typeof str, typeof bool);
+
+// ===================== 6. alert / prompt / confirm =====================
+// alert("Hello!");
+// let userName = prompt("Enter your name:");
+// let ok = confirm("Are you sure?");
+
+// ===================== 7. Type Conversions =====================
+console.log(Number("123"));
+console.log(String(456));
+console.log(Boolean(0));
+
+// ===================== 8. Basic operators =====================
+let x = 5;
+let y = 3;
+console.log(x + y, x - y, x * y, x / y);
+
+// ===================== 9. Comparisons =====================
+console.log(5 > 3);
+console.log(5 == "5");
+console.log(5 === "5");
+console.log(10 != 7);
+
+// ===================== 10. Conditional branching =====================
+let score = 75;
+
+if (score > 90) {
+  console.log("A");
+} else if (score > 70) {
+  console.log("B");
+} else {
+  console.log("C");
+}
+
+let result = score > 50 ? "Pass" : "Fail";
+console.log(result);
+
+// ===================== 11. Logical operators =====================
+console.log(true && false);
+console.log(true || false);
+console.log(!true);
+
+// ===================== 12. Nullish Coalescing Operator ?? =====================
+let user = null;
+let username = user ?? "Guest";
+console.log(username);
+
+// ===================== 13. Loops (while, for) =====================
+let i = 1;
+while (i <= 3) {
+  console.log("while:", i);
+  i++;
+}
+
+for (let j = 1; j <= 3; j++) {
+  console.log("for:", j);
+}
+
+// ===================== 14. switch =====================
+let fruit = "banana";
+
+switch (fruit) {
+  case "apple":
+    console.log("Red fruit");
+    break;
+  case "banana":
+    console.log("Yellow fruit");
+    break;
+  default:
+    console.log("Unknown fruit");
+}
+
+// ===================== 15. Functions =====================
+function add(a, b) {
+  return a + b;
+}
+console.log(add(3, 4));
+
+// ===================== 16. Function Expressions =====================
+const multiply = function(a, b) {
+  return a * b;
+};
+console.log(multiply(4, 5));
+
+// ===================== 17. Arrow Functions =====================
+const square = n => n * n;
+console.log(square(6));
